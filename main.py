@@ -1,27 +1,24 @@
-#Ejercicio 18: Sistema de evaluacion de creditos universitarios
+#Ejercicio 20: Conversion de calificaciones numericas a letras
 
-print ("Exercise 18")
+print ("Exercise 20")
 print("")
+def conversor(calificacion):
+    match calificacion:
+        case calificacion if 90 <= calificacion <= 100:
+            print("A")
+        case calificacion if 80 <= calificacion <= 89:
+            print("B")
+        case calificacion if 70 <= calificacion <= 79:
+            print("C")
+        case calificacion if 60 <= calificacion <= 69:
+            print("D")
+        case calificacion if 0 <= calificacion <= 59:
+            print("F")
+        case _:
+            print("Calificacion no valida")
 
 
+calificacion = int(input("Ingrese la calificacion numerica: "))
+conversor(calificacion)
 
-x = int(input("Ingrese la cantidad de materias a evaluar: "))
-i=0
-creditos = 0
-for x in range(x):
-    nota = float(input("Ingrese la nota (0 a 100): "))
-    if nota >= 60 and nota <=100:
-        print("Aprobado")
-        creditos =creditos + 3
-    elif nota >100:
-        print("Nota invalida")
-        break
-        
-    else:
-        print("Reprobado")
-        
-    i+=1
 
-print(f"El numero total de creditos es {creditos}")
-
-    
