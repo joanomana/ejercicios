@@ -1,16 +1,16 @@
-#Ejercicio 11: Conversion de temperaturas
-print("Exercise 11")
+#Ejercicio 12: Calculadora de IMC
+print("Exercise 12")
 
-def convertir_temperatura(temp,x):
-    match x:
-        case "c":
-            new_temp = temp * (9/5)+32
-            print(f"The temperature in Fahrenheit is: {new_temp}")
-        case "f":
-            new_temp = (temp - 32) * (5/9)
-            print(f"The temperature in Celsius is: {new_temp}")
-        case _:
-            print("Invalid option")
-temp = int(input("Enter the temperature: "))
-x = input("Enter the unit of temperature (c or f): ")
-convertir_temperatura(temp,x)
+height = float(input("Enter your height in meters: "))
+weight = float(input("Enter your weight in kilograms: "))
+imc = weight / height ** 2
+if imc < 18.5:
+    print("Underweight")
+elif imc <= 24.9:
+    print("Normal weight")
+elif imc <= 29.9:
+    print("Overweight")
+else:
+    print("Obesity")   
+
+print(imc)
