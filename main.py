@@ -1,18 +1,27 @@
-#Ejercicio 17: Sistema de calificaciones con bonificaciones
+#Ejercicio 18: Sistema de evaluacion de creditos universitarios
 
-print ("Exercise 17")
+print ("Exercise 18")
 print("")
 
 
-def bonificacion(nota,adicionales):
-    if adicionales == "Y" and nota <100 and nota >= 0: 
-        nota = (nota *0.05) + nota
-        if nota > 100:
-            nota = 100
-    else:
-        pass
-    print("La nota final es:",nota)
 
-nota = float(input("Ingrese la nota obtenida: "))
-adicionales = input("¿El alumno obtuvo bonificaciones? (Y/N): ")
-bonificacion(nota,adicionales)
+x = int(input("Ingrese la cantidad de materias a evaluar: "))
+i=0
+creditos = 0
+for x in range(x):
+    nota = float(input("Ingrese la nota (0 a 100): "))
+    if nota >= 60 and nota <=100:
+        print("Aprobado")
+        creditos =creditos + 3
+    elif nota >100:
+        print("Nota invalida")
+        break
+        
+    else:
+        print("Reprobado")
+        
+    i+=1
+
+print(f"El numero total de creditos es {creditos}")
+
+    
