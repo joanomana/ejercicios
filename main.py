@@ -1,9 +1,11 @@
-#Ejercicio 1: Verificacion de numeros pares e impares
-print("EXercise 1")
+#Ejercicio 2: Calificacion de una nota
+print("EXercise 2")
 
-number = int(input("Enter a number: "))
+def calificacion(nota):
+    
+    if nota >= 60:
+        print("Aprobado")
+    else:
+        print("Reprobado")
 
-if number % 2 == 0:
-    print("The number is even")
-else: 
-    print("The number is odd")
+calificacion(nota= float(input("Ingrese la nota para verificar si es Aprobado o Reprobado: ")))
