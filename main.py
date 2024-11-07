@@ -1,13 +1,15 @@
-#Ejercicio 13: Comparacion de tres numeros
-print("Exercise 13")
+#Ejercicio 14: Adivinanza de letras 
 
-numbers = []
-for i in range(3):
-        num = int(input("Enter a number: "))
-        numbers.append(num)
-if numbers[0] > numbers[1] and numbers[0] > numbers[2]:
-        print(f"The number {numbers[0]} is the greatest")
-elif numbers[1] > numbers[0] and numbers[1] > numbers[2]:
-        print(f"The number {numbers[1]} is the greatest")
-else:
-        print(f"The number {numbers[2]} is the greatest")
+print ("Exercise 14")
+
+def guess_letter(guess):
+    while True:
+        match guess:
+            case "C":
+                print("You guessed it!")
+                break
+            case _:
+                print("Try again!")
+guess = str(input("Guess the letter between (A,B,C,D): "))
+guess_letter(guess.upper())
+ 
