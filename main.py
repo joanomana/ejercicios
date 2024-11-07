@@ -1,17 +1,20 @@
-#Ejercicio 22: Clasificacion de triangulos por sus angulos
+#Ejercicio Estructuras Iterativas 1: Suma de los N primeros números
 
-print ("Exercise 22")
+print ("Exercise 1")
 print("")
-angulos = []
-for x in range(3):
-    angulo = int(input("Ingrese el angulo: "))
-    angulos.append(angulo)
-    
-if sum(angulos) != 180:
-        print("Los ángulos no forman un triángulo válido")
-elif all(angulo < 90 for angulo in angulos):
-        print("El triángulo es agudo")
-elif any(angulo == 90 for angulo in angulos):
-        print("El triángulo es rectángulo")
-elif any(angulo > 90 for angulo in angulos):
-        print("El triángulo es obtuso")
+nums =[]
+n = int(input("Enter a number: "))
+if n >= 0:
+    for i in range(1,n+1):
+        nums.append(i)
+print("The sum of the first",n,"numbers is:",sum(nums))
+
+
+
+
+n = int(input("Enter a number: "))
+if n >= 0:
+    suma = 0
+    for i in range(1,n+1):
+        suma += i
+print("The sum of the first",n,"numbers is:",suma)
