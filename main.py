@@ -1,11 +1,9 @@
-#Ejercicio 7: numero positivo, negativo o cero
-print("Exercise 7")
+#Ejercicio 8: Determinacion de año biciesto
+print("Exercise 8")
 
-num = float(input("Enter a number to check if it is positive, negative or equal to zero: "))
+year = int(input("Enter a year: "))
 
-if num <0:
-    print(f"The number {num} is negative")
-elif num > 0:
-    print(f"The number {num} is positive")
-else: 
-    print(f"The number is zero")
+if year % 4==0 and (year %100!=0 or year %400 == 0):
+    print(f"The year {year} is a leep year")
+else:
+    print(f"The year {year} is not a leep year")
