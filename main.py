@@ -1,28 +1,25 @@
-#Ejercicio 14: Calculo salario neto
+#Ejercicio 16: Calculo tiempo de viaje
 
-print ("Exercise 15")
+print ("Exercise 16")
 print("")
-print("Calculate your net salary")
-salary = float(input("Enter your salary: "))
-country = input("Enter your country (A,B,C) countries that are not on the list are calculated with 25%: ")
+print("Calculate travel time")
 
-if country.upper() == "A":
-    print("A payment of 20% in taxes is made ")
-    discount = salary * 0.20
-    new_salary = salary - discount
-    print(f"Your new salary is: {new_salary}")
-elif country.upper() == "B":
-    print("A payment of 15% in taxes is made ")
-    discount = salary * 0.15
-    new_salary = salary - discount
-    print(f"Your new salary is: {new_salary}")
-elif country.upper() == "C":
-    print("A payment of 10% in taxes is made ")
-    discount = salary * 0.10
-    new_salary = salary - discount
-    print(f"Your new salary is: {new_salary}")
-else:
-    print("A payment of 25% in taxes is made ")
-    discount = salary * 0.25
-    new_salary = salary - discount
-    print(f"Your new salary is: {new_salary}")
+distance = float(input("Enter the distance in km: "))
+speed = float(input("Enter the speed in km/h: "))
+
+if distance > 0 and speed > 0:
+    if speed > 120:
+        print("You are going too fast")
+    else:
+        pass
+    
+    time = distance / speed
+    if time <1:
+        time = time*60
+        print("The time it takes to travel is:",round(time), "minutes")
+    else:
+        entera = int(time)
+        minutes = (time - entera)*60
+        print("The time it takes to travel is: ", entera, "hours and", round(minutes), "minutes")
+
+    
