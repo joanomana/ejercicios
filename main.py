@@ -1,14 +1,15 @@
-#Ejercicio 9: Clasificacion de edades
-print("Exercise 9")
+#Ejercicio 10: Clasificacion de notas
+print("Exercise 10")
 
-age = int(input("Enter your age: "))
-if age >=0 and age <=12:
-    print("You are a child")
-elif age >=13 and age <=17:
-    print("You ara a teenager")
-elif age >=18 and age <=64:
-    print("You are an adult")
-elif age <0:
-    print(f"You can´t be {age} years old")
+grade = int(input("Please enter a rating: "))
+
+if grade >=90 and grade <=100:
+    print("A")
+elif grade >=80 and grade <=89:
+    print("B")
+elif grade >=70 and grade <=79:
+    print("C")
+elif grade >=60 and grade <=69:
+    print("D") 
 else:
-    print("You are an old man")
+    print("F")
