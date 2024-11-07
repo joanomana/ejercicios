@@ -1,9 +1,14 @@
-#Ejercicio 8: Determinacion de año biciesto
-print("Exercise 8")
+#Ejercicio 9: Clasificacion de edades
+print("Exercise 9")
 
-year = int(input("Enter a year: "))
-
-if year % 4==0 and (year %100!=0 or year %400 == 0):
-    print(f"The year {year} is a leep year")
+age = int(input("Enter your age: "))
+if age >=0 and age <=12:
+    print("You are a child")
+elif age >=13 and age <=17:
+    print("You ara a teenager")
+elif age >=18 and age <=64:
+    print("You are an adult")
+elif age <0:
+    print(f"You can´t be {age} years old")
 else:
-    print(f"The year {year} is not a leep year")
+    print("You are an old man")
