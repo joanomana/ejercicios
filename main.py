@@ -1,16 +1,11 @@
-#Ejercicio 6: Juego de adivinanzas de numeros
-print("Exercise 6")
+#Ejercicio 7: numero positivo, negativo o cero
+print("Exercise 7")
 
-import random
+num = float(input("Enter a number to check if it is positive, negative or equal to zero: "))
 
-x = random.randint(1,10)
-print("")
-print(x)
-number = int(input("Enter a number between 1 an 10 to try to guess the random number: "))
-
-if number < x:
-    print("The number you entered is lower, try again")
-elif number > x:
-    print("The number you entered is higher, try again")
+if num <0:
+    print(f"The number {num} is negative")
+elif num > 0:
+    print(f"The number {num} is positive")
 else: 
-    print("You did it, you guessed the number")
+    print(f"The number is zero")
